@@ -60,7 +60,7 @@ ul li {
 .popover {
 	padding: 20px 0;
 	text-indent: 30px;
-	position: absolute;
+	position: relative;
 	z-index: 99;
 }
 
