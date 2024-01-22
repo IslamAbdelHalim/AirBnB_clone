@@ -11,10 +11,12 @@ hr {
 
 .multi-places {
 	display: flex;
+	flex-direction: row;
 	align-items: center;
 	justify-content: space-around;
 	flex-wrap: wrap;
 }
+
 
 .multi-places article {
 	width: 390px;
@@ -31,6 +33,23 @@ hr {
 	text-align: center;
 	margin-bottom: 60px;
 	margin-top: 0;
+}
+
+@media (max-width: 768px) {
+    .multi-places {
+        flex-direction: column; /* Change flex direction to column */
+        align-items: stretch; /* Stretch items to full width */
+    }
+
+    .multi-places article {
+        width: 100%; /* Make articles take full width */
+        margin: 10px; /* Adjust margin for smaller screens */
+    }
+
+    .multi-places article h2 {
+        font-size: 24px; /* Adjust font size for smaller screens */
+        margin-bottom: 40px; /* Adjust margin for smaller screens */
+    }
 }
 
 .price_by_night {

@@ -11,10 +11,12 @@ hr {
 
 .multi-places {
 	display: flex;
+	flex-direction: row;
 	align-items: center;
 	justify-content: space-around;
 	flex-wrap: wrap;
 }
+
 
 .multi-places article {
 	width: 390px;
@@ -32,6 +34,7 @@ hr {
 	margin-bottom: 60px;
 	margin-top: 0;
 }
+
 
 .price_by_night {
 	min-width: 60px;
